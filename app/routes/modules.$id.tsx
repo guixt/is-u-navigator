@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import modules from "../data/modules";
 import { DeviceManagementSim } from "../components/simulations/DeviceManagementSim";
 import { TariffManagementSim } from "../components/simulations/TariffManagementSim";
