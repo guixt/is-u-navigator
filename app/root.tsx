@@ -3,19 +3,15 @@ import Navigation from "./components/Navigation";
 
 import "./app.css";
 
-export function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout() {
   return (
     <div>
       <Navigation />
       <main className="container mx-auto px-4 py-8">
-        {children}
+        <Outlet />
       </main>
     </div>
   );
-}
-
-export default function App() {
-  return <Outlet />;
 }
 
 export function ErrorBoundary() {

@@ -8,10 +8,10 @@ import ModuleDetail from './routes/modules.$id';
 const App: React.FC = () => {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="modules" element={<Modules />} />
-        <Route path="modules/:id" element={<ModuleDetail />} />
+      <Route element={<Layout />}>
+        <Route path="/" index element={<Home />} />
+        <Route path="/modules" element={<Modules />} />
+        <Route path="/modules/:id" element={<ModuleDetail />} />
       </Route>
     </Routes>
   );
